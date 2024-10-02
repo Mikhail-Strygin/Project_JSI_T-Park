@@ -1,0 +1,133 @@
+:color_group {
+  --color-global: #fff;
+}
+
+@font-face {
+  font-family: "Vollcorn";
+  src: local("Vollcorn"), url("fonts/Vollkorn-Regular.woff2"), format("woff2"),
+    url("fonts/Vollkorn-Regular.woff"), format("woff"),
+    url("fonts/Vollkorn-Regular.ttf"), format("truetype");
+}
+
+body {
+  background-color: rgb(221, 216, 216);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Vollcorn";
+}
+.pd_5 {
+  padding-top: 5px;
+}
+.header {
+  background-color: #fff;
+}
+.header,
+.header .container > * {
+  margin: 0;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0 40px 0;
+}
+.filter-wrapper {
+  position: relative;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.input {
+  padding: 15px 8px 15px 40px;
+  width: 250px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+.label-filter {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  color: red;
+  display: none;
+}
+.input::placeholder {
+  padding-left: 10px;
+}
+
+.filter-image {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+}
+#filter-region {
+  border-radius: 5px;
+  padding: 15px 20px;
+  border: none;
+  color: rgb(100, 100, 100);
+}
+
+.country {
+  margin-top: 40px;
+}
+.country__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 66px;
+}
+.country__fields {
+  width: 300px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.55);
+  border-radius: 15px;
+  padding-top: 200px;
+  position: relative;
+}
+.country__fields .flag {
+  width: 300px;
+  height: 200px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  position: absolute;
+  top: 0;
+}
+.country__fields-text {
+  padding: 15px 0px 15px 20px;
+}
+.country__value {
+  color: rgb(100, 100, 100);
+}
+.country__name {
+  padding-bottom: 15px;
+  display: block;
+}
+.container__topic {
+  display: flex;
+  gap: 5px;
+}
+.topic {
+  display: block;
+}
+
+.dm-bg_color-win {
+  background-color: rgba(31, 44, 57);
+}
+.dm-bg_color-top {
+  background-color: rgba(42, 57, 69);
+  color: #fff;
+}
+
+.image__moon-dark {
+  display: none;
+}
+.show {
+  display: block;
+}
+.hidden {
+  display: none;
+}

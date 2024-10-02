@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>Countries of the world</title>
+  </head>
+  <body>
+    <section class="header change__topic">
+      <div class="container header__wrap change__topic">
+        <h3 class="header__world change__topic">Where is the world?</h3>
+
+        <div class="container__topic size_xl">
+          <img
+            width="20"
+            height="20"
+            src="https://img.icons8.com/ios/50/do-not-disturb-2.png"
+            alt="do-not-disturb-2"
+            class="image__moon-light"
+          />
+          <img
+            width="20"
+            height="20"
+            src="https://img.icons8.com/ios-filled/50/do-not-disturb-2.png"
+            alt="do-not-disturb-2"
+            class="image__moon-dark"
+          />
+          <span class="topic change__topic"> Change theme </span>
+        </div>
+      </div>
+    </section>
+    <section class="nav">
+      <div class="container">
+        <form action="" class="filter-wrapper">
+          <img
+            src="images/icons8-лупа-25.png"
+            alt="search"
+            class="filter-image"
+          />
+
+          <input
+            type="search"
+            id="filter-input"
+            placeholder="Search for a country"
+            class="input change__topic"
+          />
+          <label for="filter-input" class="label-filter"
+            >Nothing was found</label
+          >
+          <select name="regions" id="filter-region" class="change__topic">
+            <option value="null" id="option">Filter By Region</option>
+          </select>
+        </form>
+      </div>
+    </section>
+    <section class="country">
+      <div class="container country__wrapper"></div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
